@@ -13,6 +13,10 @@
    <h2>changed values</h2>
    <div id="container2" style="display:inline-block;width: 45%"></div>
   </div>
+  
+  <div>
+    <a onClick="sendCommand('set bu_GrosserLuefter off')">bu_GrosserLuefter</a>
+  </div>
 
 <script>
    var changedValues = '';
@@ -22,6 +26,10 @@
                                     'sync disconnect on unload' : true
                                  });
 
+   var sendCommand = function(cmd){
+      socket.emit('commandNoResp', cmd);
+   };
+   
    socket.on('connect', function()
    {
       socket.emit('getAllValuesOnChange');
