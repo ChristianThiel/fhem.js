@@ -1,5 +1,5 @@
 // set debugging (0,1,2)
-exports.debug = 0;
+exports.debug = 2;
 
 // port on which node.js service is reachable
 exports.nodePort = 8086;
@@ -23,8 +23,8 @@ exports.pollForAllDevices = 600
 // change to path of web directory only if you want to deliver
 // web files by this server
 // set to false else
-exports.pathHTML = false;
-//exports.pathHTML = '/var/www/homepage';
+//exports.pathHTML = false;
+exports.pathHTML = '/home/pi/www';
 
 // default html page
 exports.indexHTML = 'index.html';
