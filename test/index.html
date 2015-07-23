@@ -5,17 +5,21 @@
 </head>
 
 <body>
-  <div style="display:inline-block;width: 45%; vertical-align:top;">
+  <div style="display:inline-block;width: 25%; vertical-align:top;">
    <h2>all values</h2>
    <div id="container1"></div>
   </div>
-  <div style="display:inline-block;width: 45%; vertical-align:top;">
+  <div style="display:inline-block;width: 25%; vertical-align:top;">
    <h2>changed values</h2>
    <div id="container2" style="display:inline-block;width: 45%"></div>
   </div>
   
-  <div>
-    <a onClick="sendCommand('set bu_GrosserLuefter off')">bu_GrosserLuefter</a>
+  <div style="display:inline-block;width: 25%; vertical-align:top;">
+   <h2>clickable values</h2>
+   <div id="container3" style="display:inline-block;width: 45%">
+    <a onClick="sendCommand('set bu_GrosserLuefter off')">bu_GrosserLuefter off</a>
+    <a onClick="sendCommand('set bu_GrosserLuefter on')">bu_GrosserLuefter on</a>
+   </div>
   </div>
 
 <script>
