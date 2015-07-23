@@ -1,0 +1,23 @@
+{
+  "name": "fhem.js",
+  "version": "0.0.1",
+  "description": "nodeJS server connected to FHEM per telnet",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChristianThiel/fhem.js.git"
+  },
+  "author": "",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/ChristianThiel/fhem.js/issues"
+  },
+  "homepage": "https://github.com/ChristianThiel/fhem.js"
+}
